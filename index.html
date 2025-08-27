@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ввод кода</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f9;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      width: 200px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Введите код доступа</h2>
+    <input type="text" id="codeInput" placeholder="Ваш код">
+    <br>
+    <button onclick="checkCode()">Войти</button>
+  </div>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value.trim();
+
+      // Список кодов и страниц
+      const codes = {
+        "1234": "page1.html",
+        "abcd": "page2.html",
+        "secret": "page3.html"
+      };
+
+      if (codes[code]) {
+        window.location.href = codes[code]; // переход на страницу
+      } else {
+        alert("Неверный код!");
+      }
+    }
+  </script>
+</body>
+</html>
