@@ -1,85 +1,64 @@
-/* Общий стиль для всех страниц Hodilka Brodilka */
+/* Общие настройки */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Georgia", serif;
-  background: radial-gradient(circle at top, #1a237e, #0d1335);
-  color: #f8f8f8;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Шапка */
-header {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-header img {
-  height: 60px;
-}
-
-header h1 {
-  font-size: 28px;
-  margin: 0;
-  color: #fff;
-  text-shadow: 0 0 8px rgba(255,255,255,0.6);
-}
-
-/* Контейнер */
-.container {
-  background: rgba(255,255,255,0.08);
-  border-radius: 15px;
-  padding: 30px;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 800px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #CCCCCC;
+    background: url('фон.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
 }
 
 /* Заголовки */
-h2, h3 {
-  color: #ffd54f;
-  text-shadow: 0 0 5px rgba(255,255,255,0.6);
+h1, h2, h3 {
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
-/* Видео */
-video, iframe {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.3);
-  margin: 15px 0;
+/* Обычный текст */
+p {
+    color: #B0C4DE;
+    font-size: 18px;
 }
 
-/* Кнопки и ссылки */
-a, button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  background: #ff9800;
-  color: #fff;
-  transition: 0.3s;
-  border: none;
-  cursor: pointer;
+/* Кнопки */
+button, .btn {
+    background-color: #1E3A8A;  /* глубокий синий */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
-a:hover, button:hover {
-  background: #e68900;
+button:hover, .btn:hover {
+    background-color: #3B82F6;  /* небесно-голубой */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    color: #FFD700; /* золотистый текст */
 }
 
-/* Подвал */
-footer {
-  padding: 15px;
-  font-size: 14px;
-  opacity: 0.8;
+/* Ссылки */
+a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #9370DB; /* нежно-фиолетовый */
+}
+
+/* Контейнер для выравнивания */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
