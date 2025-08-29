@@ -16,6 +16,13 @@ h1, h2, h3 {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
+.logo {
+  max-width: 200px; /* максимальная ширина */
+  height: auto;     /* сохраняет пропорции */
+  display: block;
+  margin: 20px auto; /* выравнивание по центру */
+}
+
 /* Обычный текст */
 p {
     color: #B0C4DE;
