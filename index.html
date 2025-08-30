@@ -12,7 +12,7 @@
   </header>
 
   <div class="container">
-    <h2>Введите код доступа</h2>
+    <h2>Введите код доступа без пробелов и знаков препинания</h2>
     <input type="text" id="codeInput" placeholder="Ваш код">
     <br>
     <button onclick="checkCode()">Войти</button>
@@ -25,9 +25,11 @@
       const code = document.getElementById("codeInput").value.trim();
 
       const codes = {
-        "1234": "page1.html",
-        "abcd": "page2.html",
-        "secret": "page3.html"
+        "РОЗА": "page1.html",
+        "МАКСКОРЖ": "page2.html",
+        "САЛЮТВЕРА": "page3.html",
+        "БУМБОКС": "page4.html",
+        "ДИПЛОМ": "page5.html"
       };
 
       if (codes[code]) {
@@ -39,5 +41,6 @@
   </script>
 </body>
 </html>
+
 
 
