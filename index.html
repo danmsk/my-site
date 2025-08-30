@@ -38,9 +38,16 @@
         alert("Неверный код!");
       }
     }
+    document.getElementById("codeInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // чтобы не было лишних действий
+        checkCode(); // вызывает ту же функцию, что и кнопка
+    }
+});
   </script>
 </body>
 </html>
+
 
 
 
