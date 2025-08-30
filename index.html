@@ -13,7 +13,8 @@
 
   <div class="container">
     <h2>Введите код доступа без пробелов и знаков препинания</h2>
-    <input type="text" id="codeInput" placeholder="Ваш код">
+    <input type="text" id="codeInput" placeholder="Ваш код"
+           onkeydown="if(event.key==='Enter'){checkCode();}">
     <br>
     <button onclick="checkCode()">Войти</button>
   </div>
@@ -38,16 +39,6 @@
         alert("Неверный код!");
       }
     }
-    document.getElementById("codeInput").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault(); // чтобы не было лишних действий
-        checkCode(); // вызывает ту же функцию, что и кнопка
-    }
-});
   </script>
 </body>
 </html>
-
-
-
-
